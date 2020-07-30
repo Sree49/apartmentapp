@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Select Your rooms</h2>
+  <div class="row">
+      <div class="col-sm-2">
+  <button type="button" class="btn btn-primary"  (click) = toggleDisplay1()>First Floor</button>
+
+  <div *ngIf = "isShow1">
+ <img src="" >
+
+<div class="col">
+  <div *ngIf = "isShow1">
+ <img src="" >
+  <div class="row-sm-3"><button type="button" class="btn btn-danger" routerLink='/first'>2 mem</button></div>
+  <br>
+<div class="row-sm-3"><button type="button" class="btn btn-primary">3 mem</button></div>
+<br>    
+<div class="row-sm-3" ><button type="button" class="btn btn-danger">4 mem</button></div>
+   <br>
+     <div class="row-sm-3"><button type="button" class="btn btn-primary">5 mem</button></div>
+</div>
+  </div>  
+</div>
+      </div>
+  <div class="col-sm-2">
+  <button type="button" class="btn btn-danger" (click) = toggleDisplay2()>Second floor</button>
+  
+  <div *ngIf = "isShow2">
+    <img src="" >
+   
+   <div class="col">
+     <div *ngIf = "isShow2">
+    <img src="" >
+     <div class="row-sm-3"><button type="button" class="btn btn-danger">2 mem</button></div>
+     <br>
+   <div class="row-sm-3"><button type="button" class="btn btn-primary">3 mem</button></div>
+   <br>    
+   <div class="row-sm-3" ><button type="button" class="btn btn-danger">4 mem</button></div>
+      <br>
+        <div class="row-sm-3"><button type="button" class="btn btn-primary">5 mem</button></div>
+   </div>
+     </div>  
+   </div>
+
+
+  </div>
+<div class="col-sm-2">
+  <button type="button" class="btn btn-primary" (click) = toggleDisplay3()>Third Floor</button>
+  <div *ngIf = "isShow3">
+    <img src="" >
+   
+   <div class="col">
+     <div *ngIf = "isShow3">
+    <img src="" >
+     <div class="row-sm-3"><button type="button" class="btn btn-danger">2 mem</button></div>
+     <br>
+   <div class="row-sm-3"><button type="button" class="btn btn-primary">3 mem</button></div>
+   <br>    
+   <div class="row-sm-3" ><button type="button" class="btn btn-danger">4 mem</button></div>
+      <br>
+        <div class="row-sm-3"><button type="button" class="btn btn-primary">5 mem</button></div>
+   </div>
+     </div>  
+   </div>
+</div>
+  
+<div class="col-sm-2" >
+     <button type="button" class="btn btn-danger" (click) = toggleDisplay4()>Fourth Floor</button>
+     <div *ngIf = "isShow4">
+      <img src="" >
+     
+     <div class="col">
+       <div *ngIf = "isShow4">
+      <img src="" >
+       <div class="row-sm-3"><button type="button" class="btn btn-danger">2 mem</button></div>
+       <br>
+     <div class="row-sm-3"><button type="button" class="btn btn-primary">3 mem</button></div>
+     <br>    
+     <div class="row-sm-3" ><button type="button" class="btn btn-danger">4 mem</button></div>
+        <br>
+          <div class="row-sm-3"><button type="button" class="btn btn-primary">5 mem</button></div>
+     </div>
+       </div>  
+     </div></div>
+     <div class="col-sm-2">
+  <button type="button" class="btn btn-primary" (click) = toggleDisplay5()>Fifth Floor</button>
+  <div *ngIf = "isShow5">
+    <img src="" >
+   
+   <div class="col">
+     <div *ngIf = "isShow5">
+    <img src="" >
+     <div class="row-sm-3"><button type="button" class="btn btn-danger">2 mem</button></div>
+     <br>
+   <div class="row-sm-3"><button type="button" class="btn btn-primary">3 mem</button></div>
+   <br>    
+   <div class="row-sm-3" ><button type="button" class="btn btn-danger">4 mem</button></div>
+      <br>
+        <div class="row-sm-3"><button type="button" class="btn btn-primary">5 mem</button></div>
+   </div>
+     </div>  
+   </div>
+</div>
+</div>
+</div>
+
+<i class="fa fa-square-o" aria-hidden="true"></i>
+</body>
+</html>

@@ -1,0 +1,85 @@
+
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+<script src= 
+"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"> 
+    </script> 
+<div class="row">
+    <div class="col-sm-5">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ-l3BxNZOhzdCRsXr82xGBtG4wDk0T1SKNfLaBhrYxCLcgYcvJ" style="width: 200px;height: 200px;">
+</div>
+<div class="col-sm-1">
+    
+
+
+
+</div>
+
+
+<div class="col-sm-5">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQYk7LAUZ6BgN9zxqiWA8RifApZq2IDd5m5pg4-b-sQK3XjaxBZ" style="width: 200px;height: 200px;">   
+</div>
+</div>
+<div class="container">
+<table class="table table-bordered">
+<thead>
+    <tr>
+
+    <td>Id</td>
+    <td>Email</td>
+    
+</tr>
+</thead>
+<tbody>
+<div *ngFor="let c of mem;let i=index">
+    <tr>
+    <td>{{i+1}}</td>
+    <td>{{c.email}}</td>
+    </tr>
+<!--<tr *ngIf="i == 1" style="background-color: blue;color: brown;">
+        
+        Room is not available</tr>-->
+        <button mat-button type="submit" style="background-color: lightblue" class="mat-raised-button mat-primary" [disabled]="sub()">Book</button>  
+<h1>Hostel Fee -
+    <br> Rs 8000</h1>
+        </div>
+        </tbody>
+<!---
+<div *ngIf="i == 0">
+<button mat-button type="submit" style="background-color: lightblue" class="mat-raised-button mat-primary" [disabled]="sub()">Book</button>  
+<h1>Hostel Fee -
+    <br> Rs 8000</h1></div>  -->
+
+
+</table>
+</div>
+<!--
+<div class="container">
+    <table class="table table-bordered">
+     <thead>
+       <tr>
+         <th>Index</th>
+         <th>Email</th>
+        
+       </tr>
+     </thead>
+     <tbody>
+       <tr *ngFor="let c of mem;let i=index">
+         <td>{{i+1}}</td>
+         <td>{{c.email}}</td>
+      </tr>
+      <tr *ngIf="i==0">
+        <button mat-button type="submit" style="background-color: lightblue" class="mat-raised-button mat-primary">Book</button>  </tr>
+        <tr>
+                <td>{{i+1}}</td>
+                <div *ngIf="i == 1" style="background-color: blue;color: brown;">
+        
+        Room is not available</div>
+     </tbody>
+   </table>
+ </div>-->

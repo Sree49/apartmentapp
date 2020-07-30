@@ -1,0 +1,58 @@
+<!--<form (ngSubmit)="onAddPost()" method="POST">
+<mat-card >
+    
+    <mat-form-field>
+    <textarea matInput rows="15" ></textarea>
+    </mat-form-field>
+    <br>
+    <button  mat-raised-button color="primary"  >Save Post</button>
+    
+    </mat-card>
+    </form>
+    
+-->
+
+
+        <h1 style="align-content: center;color:rgb(228, 163, 85)" >HELP DESK</h1>  
+        <div class="row">
+                <div class="col-sm-6">
+                    <button mat-button type="submit"  class="mat-raised-button mat-primary" routerLink="/list">RESOLVED</button>
+                </div>
+                </div>              
+    <div class="medium-list">
+        
+            <div class="list-viewer-wrapper">
+            <div class="list-header-title">LATEST
+            </div>
+
+            <form [formGroup]="helpForm" (ngSubmit)="helpForm.valid && onAddPost() " novalidate method="POST"> 
+              <div class="form-container">
+            
+              <mat-form-field>
+            
+                    <input id="text1"
+                    matInput
+                    formControlName="text1"
+                    [(ngModel)]="newPost.text1"
+                    
+                    />
+                 </mat-form-field>
+              
+                                          
+                    <button mat-button type="submit"  class="mat-raised-button mat-primary" >Save Post</button>
+                    
+                    
+            </div>
+
+            <br>
+            <br>
+            <br>
+            
+            
+            
+            </form>
+            </div>
+            
+            
+            </div>
+          

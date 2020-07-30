@@ -1,0 +1,39 @@
+<div class="medium-list">
+    <div class="list-viewer-wrapper">
+    <div class="list-header-title">Login</div>
+    <form [formGroup]="loginForm" (ngSubmit)="loginForm.valid && onLoginSubmit()" novalidate method="POST"> 
+      <div class="form-container">
+    
+      <mat-form-field>
+    <input id="email"
+        matInput
+        formControlName="email"
+        [(ngModel)]="user2.email"
+        placeholder="enter ur name" />
+    
+      </mat-form-field>
+              <mat-form-field>
+                <input id="p"
+                    matInput
+                    formControlName="p"
+                    [(ngModel)]="user2.p"
+                    placeholder="enter ur password" 
+                    [type]="hide ? 'password':'text'" />
+                <mat-icon matSuffix (click)="hide!=hide">
+                  {{hide ? 'visibility' : 'visibility_off'}}
+    
+                </mat-icon>
+                  </mat-form-field>
+      
+                                  
+            <button mat-button type="submit" style="background-color: lightblue" class="mat-raised-button mat-primary" [disabled]="!loginForm.valid">Login</button>      
+    </div>
+    
+    
+    
+    </form>
+    </div>
+    
+    
+    </div>
+  

@@ -1,0 +1,79 @@
+<!--<div>
+    <p>Today is {{today | date}}</p>
+    <p>Or if you prefer, {{today | date:'fullDate'}}</p>
+    <p>The time is {{today | date:'h:mm a z'}}</p>
+  </div>
+  <div class="card" style="width: 18rem;">
+    
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text" *ngFor="let p of mem">
+        {{p.name}}
+            
+        {{p.starttime}}
+        {{p.place}}
+        {{p.time}}
+
+      </p>
+
+    </div>
+  </div>
+
+  <div class="row card-group">
+    <div class="col-4"  *ngFor="let p of mem">
+        <div class="card">
+            {{p.name}}
+            
+            {{p.starttime}}
+            {{p.place}}
+            {{p.time}}
+        </div>
+    </div>
+</div>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+     body{
+  background: url(https://templatefor.net/wp-content/uploads/2018/03/341865486.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+    }
+  </style>
+</head>
+<body>
+ 
+<div class="container">
+ 
+  <div class="card" style="background-color:lightpink" *ngFor="let p of mem" >
+    <div class="card-body" style="color:blue;font-size: medium;" ng-init="someMethod()">
+      <h4 class="card-title" >EVENT</h4>
+      <p class="card-text">
+
+        {{p.name}}
+            <br>
+        {{p.starttime | date}}
+        <br>
+        {{p.place}}
+        <br>
+        {{p.time}}
+        
+        <br>
+        <br>
+      </p>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

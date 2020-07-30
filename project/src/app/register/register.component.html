@@ -1,0 +1,69 @@
+<div class="medium-list">
+    <div class="list-viewer-wrapper">
+    <div class="list-header-title">Register</div>
+    <form [formGroup]="registerForm" (ngSubmit)="registerForm.valid && onRegisterSubmit()" novalidate  method="POST" > 
+      <div class="form-container">
+    
+      <mat-form-field>
+    <input id="user"
+        matInput
+        formControlName="user"
+        [(ngModel)]="user1.user"
+        placeholder="enter ur name" />
+    
+      </mat-form-field>
+      <mat-form-field>
+        <input id="mob"
+            matInput
+            formControlName="mob"
+            [(ngModel)]="user1.mob"
+            placeholder="enter ur mobile" />
+        
+          </mat-form-field>
+          <mat-form-field>
+            <input id="email"
+                matInput
+                formControlName="email"
+                [(ngModel)]="user1.email"
+                placeholder="enter ur email@gmail.com" />
+            
+              </mat-form-field>
+              <mat-form-field>
+                <input id="pass"
+                    matInput
+                    formControlName="pass"
+                    [(ngModel)]="user1.pass"
+                    placeholder="enter ur password" 
+                    [type]="hide ? 'password':'text'" />
+                <mat-icon matSuffix (click)="hide!=hide">
+                  {{hide ? 'visibility' : 'visibility_off'}}
+    
+                </mat-icon>
+                  </mat-form-field>
+                  <mat-form-field>
+                    <input id="passw"
+                        matInput
+                        formControlName="passw"
+                        [(ngModel)]="user1.passw"
+                        placeholder="confirm ur password" 
+                        [type]="hide ? 'password':'text'" />
+                        <mat-icon matSuffix (click)="hide!=hide">
+                          {{hide ? 'visibility' : 'visibility_off'}}
+    </mat-icon>        
+                      </mat-form-field>
+                                  
+            <button mat-button type="submit"  class="mat-raised-button mat-primary" color="mat-primary" [disabled]="!registerForm.valid">Register</button>      
+    <br>
+                                                           OR
+    <button mat-button type="submit" color="mat-primary" class="mat-raised-button mat-primary" [disabled]="!registerForm.valid" routerLink="/login">Login</button>      
+  </div>
+    
+    
+    </form>
+    </div>
+    
+    
+    </div>
+    
+  
+  
